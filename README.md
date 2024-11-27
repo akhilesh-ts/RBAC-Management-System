@@ -74,9 +74,16 @@ To get started with the project, follow these steps:
 ### Summary of Steps Added:
 1. **Cloning the Repository**: `git clone <repository-url>`
 2. **Navigating to the Project Folder**: `cd <project-folder>`
-3. **Installing Dependencies**: `npm install`
+3. **Installing Dependencies**: `npm install` 
 4. **Running the Mock API Server**: `npm run serve-json`
 5. **Starting the Development Server**: `npm start`
+
+## **Admin Login Credentials**
+**Email** : `admin@gmail.com`
+
+**Password** : `Admin@1234`
+
+
 
 This is a complete set of instructions that will guide anyone through setting up the project from cloning the repository to running it on their local machine.
 
