@@ -49,7 +49,7 @@ The RBAC system features an **intuitive and responsive interface**, ensuring a s
 ### **2. Role Management**
 - **Define and Edit Roles**: Admins can create new roles or edit existing ones, defining the scope and permissions associated with each role.
 - **Permissions Assignment**: Roles can be assigned permissions such as **Read**, **Write**, and **Delete**.
-- **Role Management Access**: Role management features are restricted to users or admins who have the `roleManagement` field set to **true** in their profile.
+- **Role Management Access**: Role management features are **restricted** to users or admins who have the `roleManagement` field set to **true** during their user or admin creation. This ensures that only authorized personnel have access to manage roles and permissions.
 
 ### **3. Dynamic Permissions**
 - **Assign or Modify Permissions**: Admin users can assign permissions to roles dynamically, modifying roles' access rights at any time.
