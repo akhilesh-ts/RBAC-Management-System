@@ -44,7 +44,7 @@ The RBAC system features an **intuitive and responsive interface**, ensuring a s
   - Edit user details such as name, email, and assigned role.
   - Delete users from the system.
 - **Assign Roles**: Admins can assign roles to users, allowing them to inherit permissions based on their roles.
-- **User Status**: Mark users as **Active** or **Inactive**, controlling their access to the system.
+- **User Status**: The **User Status** can only be changed if the `userStatus` field is set to **true**. This setting is configured during user creation or when editing an existing user's details. Only users with an **Active** status can access the system, while users marked as **Inactive** are restricted from logging in.
 
 ### **2. Role Management**
 - **Define and Edit Roles**: Admins can create new roles or edit existing ones, defining the scope and permissions associated with each role.
