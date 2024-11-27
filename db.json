@@ -22,7 +22,7 @@
       "userStatus": false,
       "createdAt": "2024-11-27T10:04:22.909Z",
       "createdBy": "akhil",
-      "status": true
+      "status": false
     },
     {
       "id": "6b3a",
@@ -34,8 +34,20 @@
       "userStatus": false,
       "createdAt": "2024-11-27T10:04:47.020Z",
       "createdBy": "akhil",
-      "status": true,
+      "status": false,
       "userManagement": false
+    },
+    {
+      "id": "fe11",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "Admin@1234",
+      "role": "Admin",
+      "roleManagement": true,
+      "userStatus": true,
+      "createdAt": "2024-11-27T12:50:13.354Z",
+      "createdBy": "akhil",
+      "status": true
     }
   ],
   "roles": [
@@ -69,27 +81,6 @@
         "update"
       ],
       "createdAt": "2024-11-27T10:03:37.424Z",
-      "createdUser": "akhil"
-    },
-    {
-      "id": "1cfe",
-      "role": "sd",
-      "permissions": [
-        "read",
-        "create"
-      ],
-      "createdAt": "2024-11-27T10:15:25.979Z",
-      "createdUser": "akhil"
-    },
-    {
-      "id": "d357",
-      "role": "abc",
-      "permissions": [
-        "read",
-        "update",
-        "remove"
-      ],
-      "createdAt": "2024-11-27T10:19:57.403Z",
       "createdUser": "akhil"
     }
   ]
