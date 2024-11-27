@@ -75,5 +75,6 @@ To get started with the project, follow these steps:
 ```bash
 git clone <repository-url>
 
+```bash
 
-### 1. Clone the Repository:
+
