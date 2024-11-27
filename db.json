@@ -1,0 +1,96 @@
+{
+  "user": [
+    {
+      "id": "b891",
+      "name": "akhil",
+      "email": "akhil@gmail.com",
+      "password": "Akhil@1234",
+      "role": "Admin",
+      "roleManagement": true,
+      "userStatus": true,
+      "createdAt": "2024-11-27T09:40:44.520Z",
+      "createdBy": "akhil",
+      "status": true
+    },
+    {
+      "id": "bb2d",
+      "name": "viswan",
+      "email": "viswan@gmail.com",
+      "password": "Viswan@1234",
+      "role": "editor",
+      "roleManagement": false,
+      "userStatus": false,
+      "createdAt": "2024-11-27T10:04:22.909Z",
+      "createdBy": "akhil",
+      "status": true
+    },
+    {
+      "id": "6b3a",
+      "name": "vishnu",
+      "email": "appu@gmail.com",
+      "password": "Appu@1234",
+      "role": "user",
+      "roleManagement": false,
+      "userStatus": false,
+      "createdAt": "2024-11-27T10:04:47.020Z",
+      "createdBy": "akhil",
+      "status": true,
+      "userManagement": false
+    }
+  ],
+  "roles": [
+    {
+      "id": "be99",
+      "role": "Admin",
+      "permissions": [
+        "read",
+        "create",
+        "remove",
+        "update"
+      ],
+      "createdAt": "2024-11-26T04:43:55.492Z",
+      "createdUser": "akhil"
+    },
+    {
+      "id": "61db",
+      "role": "editor",
+      "permissions": [
+        "read",
+        "remove",
+        "update"
+      ],
+      "createdAt": "2024-11-27T10:03:06.745Z",
+      "createdUser": "akhil"
+    },
+    {
+      "id": "51d9",
+      "role": "user",
+      "permissions": [
+        "update"
+      ],
+      "createdAt": "2024-11-27T10:03:37.424Z",
+      "createdUser": "akhil"
+    },
+    {
+      "id": "1cfe",
+      "role": "sd",
+      "permissions": [
+        "read",
+        "create"
+      ],
+      "createdAt": "2024-11-27T10:15:25.979Z",
+      "createdUser": "akhil"
+    },
+    {
+      "id": "d357",
+      "role": "abc",
+      "permissions": [
+        "read",
+        "update",
+        "remove"
+      ],
+      "createdAt": "2024-11-27T10:19:57.403Z",
+      "createdUser": "akhil"
+    }
+  ]
+}
