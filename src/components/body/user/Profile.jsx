@@ -61,11 +61,11 @@ const Profile = () => {
           value={userData?.roleManagement ? "Enabled" : "Disabled"}
         />
 
-        <DetailCard
+        {/* <DetailCard
           icon="M17 8a4 4 0 00-8 0 4 4 0 100 8h6a4 4 0 102-8z"
           title="User Management"
           value={userData?.userManagement ? "Enabled" : "Disabled"}
-        />
+        /> */}
 
         <DetailCard
           icon="M5 4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V6a2 2 0 00-2-2H5z"

@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux'
 const User = () => {
   const searchVal=useSelector((store)=>store.user.searchQuery)
   return (
-    <div className="w-full h-full bg-white shadow-lg rounded-lg p-10">
+    <div className="w-full h-auto bg-white shadow-lg rounded-lg p-10">
         <h1 className="text-xl font-bold mb-10">User Management</h1>
         <div className="w-full md:flex items-center justify-between">
           <Search searchVal={searchVal} query={setSearchQuery} />

@@ -52,18 +52,6 @@
   ],
   "roles": [
     {
-      "id": "be99",
-      "role": "Admin",
-      "permissions": [
-        "read",
-        "create",
-        "remove",
-        "update"
-      ],
-      "createdAt": "2024-11-26T04:43:55.492Z",
-      "createdUser": "akhil"
-    },
-    {
       "id": "61db",
       "role": "editor",
       "permissions": [
@@ -91,6 +79,18 @@
         "update"
       ],
       "createdAt": "2024-11-28T05:01:09.350Z",
+      "createdUser": "admin"
+    },
+    {
+      "id": "bbb0",
+      "role": "superUser",
+      "permissions": [
+        "create",
+        "read",
+        "update",
+        "remove"
+      ],
+      "createdAt": "2024-11-28T05:48:41.770Z",
       "createdUser": "admin"
     }
   ]

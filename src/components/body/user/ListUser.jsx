@@ -8,6 +8,7 @@ import UserDetails from "./UserDetails";
 import UserStatus from "./UserStatus";
 import DeleteUser from "./DeleteUser";
 import { fetchLocalStorageData } from "../../../utils/helper/fetchLocalStorageData";
+import UserCard from '../user/UserCard'
 
 const userColWithCrud = () => [
   ...userColumns,
@@ -77,8 +78,11 @@ const ListUser = () => {
     dispatch(fetchRoles());
   },[dispatch]);
 
+  const userData=search ? search : tableData
+
   return (
-    <div className="py-6">
+    <>
+    <div className=" hidden lg:block py-6">
       <DataTable
         className="border border-gray-300"
         columns={userColWithCrud()}
@@ -105,6 +109,23 @@ const ListUser = () => {
         }}
       />
     </div>
+
+    <div className="block lg:hidden">
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+        {
+          userData?.map((item)=>(
+<UserCard key={item?.id} id={item?.id} userName={item?.name} email={item?.email} role={item?.role}/>
+          ))
+        }
+      
+     
+      </div>
+      
+      
+    </div>
+
+    </>
   );
 };
 

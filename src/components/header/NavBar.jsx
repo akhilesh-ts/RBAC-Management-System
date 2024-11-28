@@ -20,7 +20,7 @@ const NavBar = () => {
             className="text-white p-2 block lg:hidden"
             onClick={() => setShowMobileNav((prev) => !prev)}
           >
-            <FiMenu />
+            <FiMenu className="text-primary" />
           </button>
         </div>
       </div>

@@ -7,6 +7,7 @@ import EditRole from "./EditRole";
 import DeleteRole from "./DeleteRole";
 import ShowDetails from "./ShowDetails";
 import { deleteRole } from "../../../utils/api/rolesApi";
+import RoleCard from "./RoleCard";
 
 const roleColumnwithAction = () => [
   ...roleColumns,
@@ -68,9 +69,11 @@ const ListRoles = () => {
     dispatch(fetchRoles());
   }, [dispatch]);
 
+  const dataToMap = filteredRoles ? filteredRoles : roles;
+ 
   return (
     <>
-      <div className="py-6">
+      <div className=" hidden md:block py-6">
         <DataTable
           className="border border-gray-300"
           columns={roleColumnwithAction()}
@@ -97,6 +100,15 @@ const ListRoles = () => {
           }}
         />
       </div>
+ <div className="block md:hidden mt-10 ">
+ {
+        dataToMap.map((item)=>(
+           <RoleCard key={item?.id} id={item?.id} role={item?.role} permissions={item?.permissions} />
+        ))
+      }
+ </div>
+      
+
     </>
   );
 };
