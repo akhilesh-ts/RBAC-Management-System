@@ -13,7 +13,6 @@ const Profile = () => {
   const { roles } = useSelector((store) => store.roles);
   const { user } = useSelector((store) => store.user);
 
-
   const userRoles = roles.find((role) => role?.role === userData?.role);
 
   useEffect(() => {
@@ -26,7 +25,6 @@ const Profile = () => {
     const currentUser = user?.find((item) => item?.id === response?.id);
     setUserData(currentUser);
   }, [user]);
-
 
   return (
     <div className="max-w-5xl mx-auto mt-12 p-8 bg-white shadow-lg rounded-lg">
@@ -85,7 +83,10 @@ const Profile = () => {
       </div>
 
       <div className="mt-10">
-        <h3 className="text-2xl font-bold text-gray-800 mb-4">Permissions</h3>
+      
+          <h3 className="text-2xl font-bold text-gray-800 mb-4">Permissions</h3>
+     
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {userRoles?.permissions?.map((permission, index) => (
             <div

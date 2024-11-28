@@ -10,7 +10,7 @@
       "userStatus": false,
       "createdAt": "2024-11-27T09:40:44.520Z",
       "createdBy": "akhil",
-      "status": false
+      "status": true
     },
     {
       "id": "bb2d",
@@ -30,7 +30,7 @@
       "name": "admin",
       "email": "admin@gmail.com",
       "password": "Admin@1234",
-      "role": "Admin",
+      "role": "admin",
       "roleManagement": true,
       "userStatus": true,
       "createdAt": "2024-11-27T12:50:13.354Z",
@@ -82,15 +82,15 @@
       "createdUser": "admin"
     },
     {
-      "id": "bbb0",
-      "role": "superUser",
+      "id": "c7be",
+      "role": "admin",
       "permissions": [
         "create",
         "read",
         "update",
         "remove"
       ],
-      "createdAt": "2024-11-28T05:48:41.770Z",
+      "createdAt": "2024-11-28T06:15:10.765Z",
       "createdUser": "admin"
     }
   ]
