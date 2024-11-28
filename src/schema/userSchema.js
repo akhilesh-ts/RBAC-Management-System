@@ -24,7 +24,7 @@ import * as Yup from 'yup'
         .test(
           'not-default',
           'Please select a valid role',
-          (value) => value && value !== 'default' // Ensure the value isn't "default"
+          (value) => value && value !== 'default'
         )
         .required('Role is required'),
     })

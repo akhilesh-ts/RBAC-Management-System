@@ -17,7 +17,6 @@ const AvatarDropDown = () => {
         inline
       >
         <Dropdown.Item onClick={()=>navigate('/rbac/profile')}>Profile</Dropdown.Item>
-
         <Dropdown.Divider />
         <Dropdown.Item onClick={() => handelLogout()}>Sign out</Dropdown.Item>
       </Dropdown>

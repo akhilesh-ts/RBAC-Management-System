@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import { FiMenu } from "react-icons/fi";
 import MobileNav from "../header/MobileNav"
 import AvatarDropDown from "./AvatarDropDown";
@@ -13,12 +12,10 @@ const NavBar = () => {
         <div className="text-white">
           <h1 className="text-xl font-bold text-primary">RBAC</h1>
         </div>
-
         <div className="flex gap-4">
           <div>
             <AvatarDropDown />
           </div>
-
           <button
             className="text-white p-2 block lg:hidden"
             onClick={() => setShowMobileNav((prev) => !prev)}

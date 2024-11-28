@@ -17,10 +17,7 @@ const CreateUser = () => {
   const emailInputRef = useRef(null);
   const dispatch = useDispatch();
 
-  const roles = useSelector((store) => store.roles.roles);
-
-
-  
+  const roles = useSelector((store) => store.roles.roles); 
   const { error, loading, user } = useSelector((store) => store.user);
 
   useEffect(() => {

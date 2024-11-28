@@ -20,10 +20,8 @@ const MobileNav = () => {
                 <Sidebar.Items>
                   <Sidebar.ItemGroup>
                     {NavigationData.map((item) => (
-                      <Link key={item?.id} to={item?.path}  className="">
-                        
-                        <div className="flex items-center gap-3 p-4">
-                         
+                      <Link key={item?.id} to={item?.path} > 
+                        <div className="flex items-center gap-3 p-4"> 
                           <div className="text-white">{item?.icon}</div>
                           <div className="text-white">{item?.name}</div>
                         </div>

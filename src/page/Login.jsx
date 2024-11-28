@@ -32,22 +32,18 @@ const Login = () => {
       try {
         const isUser = user.find((user) => user.email === values.email);
         setIsLoading(true);
-
         const validate = validateUserAuth(isUser, values);
-
         if (validate) {
           toast.warning(validate, {
             className: "bg-red-400 text-white",
           });
           setIsLoading(false);
-
           setErrorMessage(validate);
         } else {
           toast.success("successfully loged!", {
             className: "bg-green-400 text-white",
           });
           localStorage.setItem('logedinUser',JSON.stringify(isUser))
-      
           setIsLoading(false);
           setErrorMessage("");
           navigate("/rbac");

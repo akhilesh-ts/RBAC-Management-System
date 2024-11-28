@@ -21,17 +21,17 @@ const DeleteRole = ({ id }) => {
     const isUser = user.find((item) => item?.role === isRole?.role);
 
     if (isUser) {
-      // Show a message if the role is assigned to a user
+      
       Swal.fire({
         title: "Cannot Delete Role",
         text: "This role is assigned to a user, so it cannot be deleted.",
         icon: "error",
         confirmButtonText: "OK",
       });
-      return; // Exit the function early
+      return; 
     }
 
-    // SweetAlert2 dialog for confirmation
+  
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {
         confirmButton: "bg-green-400 px-4 py-2 text-white rounded-lg ml-4",
@@ -51,8 +51,7 @@ const DeleteRole = ({ id }) => {
         reverseButtons: true,
       })
       .then((result) => {
-        if (result.isConfirmed) {
-          // Proceed with deletion
+        if (result.isConfirmed) { 
           swalWithBootstrapButtons.fire({
             title: "Deleted!",
             text: `Role has been deleted.`,
@@ -61,7 +60,6 @@ const DeleteRole = ({ id }) => {
 
           dispatch(deleteRole(id));
         } else if (result.dismiss === Swal.DismissReason.cancel) {
-          // Cancellation message
           swalWithBootstrapButtons.fire({
             title: "Cancelled",
             text: "Your role is safe :)",
@@ -74,7 +72,6 @@ const DeleteRole = ({ id }) => {
   return (
     <button
      disabled={currentUser && !currentUser.roleManagement}
-      
       className={`py-1 px-5 rounded-lg font-medium  text-white ${
         currentUser && !currentUser.roleManagement ? "cursor-not-allowed bg-red-300" : "bg-red-400"
       }`}

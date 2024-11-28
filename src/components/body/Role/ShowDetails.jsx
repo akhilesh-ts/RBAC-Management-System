@@ -40,12 +40,9 @@ export function ShowDetails({ id }) {
         <Modal.Header />
         <Modal.Body>
   <div className="space-y-6">
-    {/* Role Name */}
     <h3 className="text-2xl font-bold text-gray-900 dark:text-white text-center">
       {roleDetails?.role.toUpperCase()}
     </h3>
-
-    {/* Creator Details */}
     <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg shadow-md">
       <h2 className="text-lg font-medium text-gray-800 dark:text-gray-200">
         Created By
@@ -54,8 +51,6 @@ export function ShowDetails({ id }) {
         {roleDetails?.createdUser.toUpperCase()}
       </p>
     </div>
-
-    {/* Creation Date */}
     <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg shadow-md">
       <h2 className="text-lg font-medium text-gray-800 dark:text-gray-200">
         Created At
@@ -64,8 +59,6 @@ export function ShowDetails({ id }) {
         {formattedDate}
       </p>
     </div>
-
-    {/* Permissions */}
     <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg shadow-md">
       <h2 className="text-lg font-medium text-gray-800 dark:text-gray-200">
         Permissions

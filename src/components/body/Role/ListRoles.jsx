@@ -58,7 +58,6 @@ const roleColumnwithAction = () => [
 
 const ListRoles = () => {
   const dispatch = useDispatch();
-  // const searchQuery = useSelector((store) => store?.search?.searchQuery);
   const { searchQuery, roles } = useSelector((store) => store.roles);
 
   const filteredRoles = roles.filter((roles) =>

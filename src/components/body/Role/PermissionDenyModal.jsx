@@ -11,7 +11,6 @@ import { useState } from "react";
         show={true}
         onClose={onClose}
         size="md"
-        // onClose={() => setOpenModal(false)}
         popup
        
       >

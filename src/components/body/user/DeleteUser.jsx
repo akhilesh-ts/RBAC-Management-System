@@ -66,7 +66,6 @@ const DeleteUser = ({ id }) => {
   return (
     <>
       <button
-        // className="bg-red-400 py-1 px-5 text-white rounded-lg font-medium"
         className={`py-1 px-5 rounded-lg font-medium  text-white ${
           currentRole&&!currentRole?.includes('remove') ? "cursor-not-allowed bg-red-300" : "bg-red-400"
         }`}

@@ -19,7 +19,6 @@ const UserStatus = ({ id }) => {
   useEffect(() => {
     const response = user?.find((item) => item?.id === id);
     setUserData(response);
-    
   }, [id, user]);
 
   const handelOpenModal = () => {
@@ -32,15 +31,13 @@ const UserStatus = ({ id }) => {
       confirmButtonText: "Yes",
       denyButtonText: `No`,
     }).then((result) => {
-      /* Read more about isConfirmed, isDenied below */
+     
       if (result.isConfirmed) {
         const updateUser = {
             ...userData,
             status: !userData.status,
           };
-
         dispatch(changeStatus(updateUser))
-       
         Swal.fire("Saved!", "", "success");
       } else if (result.isDenied) {
         Swal.fire("Changes are not saved", "", "info");
@@ -60,7 +57,6 @@ const UserStatus = ({ id }) => {
       ? "bg-green-300 cursor-not-allowed" 
       : "bg-red-400"  
   } py-1 px-5 text-white rounded-lg font-medium`}
-  
 >
   {userData?.status ? "Activate" : "Deactivated"}
 </button>

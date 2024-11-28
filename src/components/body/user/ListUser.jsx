@@ -2,9 +2,7 @@ import React, { useEffect } from "react";
 import DataTable from "react-data-table-component";
 import { userColumns } from "../../../utils/constants";
 import { useDispatch, useSelector } from "react-redux";
-import DeleteRole from "../Role/DeleteRole";
 import { fetchRoles } from "../../../utils/api/rolesApi";
-import { deleteUser } from "../../../utils/api/userApi";
 import EditUser from "./EditUser";
 import UserDetails from "./UserDetails";
 import UserStatus from "./UserStatus";
@@ -29,7 +27,6 @@ const userColWithCrud = () => [
         )}
       </div>
     ),
-
     sortable: true,
   },
   {
@@ -69,12 +66,9 @@ const userColWithCrud = () => [
 const ListUser = () => {
   const user = useSelector((store) => store.user.user);
   const searchQuery = useSelector((store) => store?.user?.searchQuery);
-
   const currentUser = fetchLocalStorageData();
-
   const dispatch = useDispatch();
   const tableData = user?.filter((item) => item?.name !== currentUser?.name);
-
   const search = tableData.filter((item) =>
     item?.name.toLowerCase().includes(searchQuery.toLowerCase())
   );

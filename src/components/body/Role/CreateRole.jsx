@@ -13,12 +13,10 @@ export function CreateRole() {
   const [errorMesssage, setErrorMessage] = useState(null);
   const [currentUser, setCurrentUser] = useState(null);
   const emailInputRef = useRef(null);
-
   const dispatch = useDispatch();
-
-
   const { roles, loading, error } = useSelector((store) => store.roles);
   const { user } = useSelector((store) => store?.user);
+
 
   useEffect(() => {
     dispatch(fetchRoles());
@@ -80,9 +78,7 @@ export function CreateRole() {
   });
 
   const handelModal = () => {
-
     const loggeduser=fetchLocalStorageData()
-
     setOpenModal(true);
   };
 
